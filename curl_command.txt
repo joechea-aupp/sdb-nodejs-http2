@@ -1,0 +1,8 @@
+# use curl with http2 to send post request
+curl --http2-prior-knowledge -v -X POST http://localhost:8000/ -H "Content-Type: application/json" -d '{"title":"Nice Guys Finish Last", "author":"Frank Doe"}'
+
+# use curl with http2 to send update request 
+curl --http2-prior-knowledge -v -X PUT http://localhost:8000/ -H "Content-Type: application/json" -d '{"title":"Nice Guys Finish Last", "author":"Joe Doe"}'
+
+# use curl with http2 to send delete request
+curl --http2-prior-knowledge -v -X DELETE http://localhost:8000/ -H "Content-Type: application/json" -d '{"title":"Nice Guys Finish Last", "author":"Joe Doe"}'
